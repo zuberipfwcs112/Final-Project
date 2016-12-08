@@ -15,6 +15,8 @@
             <td><img src="images/02alphabet.jpg" alt="Alphabet" width="50%" height="50%"></td>
     </div>
 
+<hr>
+
 <h2>Step 1: Select three letters</h2>
 
 <div style="text-align: center">
@@ -100,9 +102,13 @@
     </select>
 </div>
 
+<hr>
+
 <p>
 <div style="text-align: center"><img src="images/colorwheel.jpg" width="10%" height="10%"></div>
 </p>
+
+<hr>
 
 <h2>Step 2: Select letter color</h2>
 
@@ -119,6 +125,8 @@
     </select>
 </div>
 
+<hr>
+
 <h2>Step 3: Select shirt color</h2>
 
 <div style="text-align: center">
@@ -133,6 +141,50 @@
         <option>Violet</option>
     </select>
 </div>
+
+<hr>
+
+<h2>Step 4: Input quantity needed for each size</h2>
+
+<div style="text-align: center">
+    Small<input type="text" id="smallShirtQty"><br>
+    Medium<input type="text" id="mediumShirtQty"><br>
+    Large<input type="text" id="largeShirtQty"><br>
+    X-Large<input type="text" id="xlShirtQty"><br>
+    XX-Large<input type="text" id="xxlShirtQty"><br>
+</div>
+
+<hr>
+
+<h3>We ship USPS Priority with tracking</h3>
+<h3>Standard shipping for all orders is $15.00</h3>
+<h3>Order 30 shirts or more and get 10% off your order and FREE shipping!</h3>
+
+<hr>
+
+Please click to verify your selected inputs -><input type="button" value="Verify Order" onclick="VerifyOrder();">
+
+<div id="outputLetter1"></div>
+<div id="outputLetter2"></div>
+<div id="outputLetter3"></div>
+<div id="outputLetterColor"></div>
+<div id="outputShirtColor"></div>
+<div id="outputShirtQtyS"></div>
+<div id="outputShirtQtyM"></div>
+<div id="outputShirtQtyL"></div>
+<div id="outputShirtQtyXL"></div>
+<div id="outputShirtQtyXXL"></div>
+<hr>
+
+<div style="text-align: left">
+    Enter your state sales tax %:<input type="text" id="stateSalesTax"><br>
+</div>
+
+<hr>
+
+Get total -><input type="button" value="Total" onclick="Total();">
+
+<div id="total"></div>
 
 <hr>
 
